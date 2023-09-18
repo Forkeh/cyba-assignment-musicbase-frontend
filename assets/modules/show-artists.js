@@ -6,8 +6,14 @@ async function showArtists(artists) {
     }
     artistsGrid.innerHTML = '';
 
-    for (const artist of artists) {
+    if (artists.length === 0 || !artists) {
         const html = `
+        <p>No artists found</p>
+        `;
+        artistsGrid.insertAdjacentHTML('beforeend', html);
+    } else {
+        for (const artist of artists) {
+            const html = `
         <article class="artist-card">
         <div class="artist-card-image">
             <img src="${artist.image}" alt="${artist.name}">
@@ -17,7 +23,8 @@ async function showArtists(artists) {
         </div>
         </article>
         `;
-        artistsGrid.insertAdjacentHTML('beforeend', html);
+            artistsGrid.insertAdjacentHTML('beforeend', html);
+        }
     }
 }
 

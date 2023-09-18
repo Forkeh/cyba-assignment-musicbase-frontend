@@ -6,8 +6,14 @@ async function showAlbums(albums) {
     }
     albumsGrid.innerHTML = '';
 
-    for (const album of albums) {
+    if (albums.length === 0 || !albums) {
         const html = `
+        <p>No albums found</p>
+        `;
+        albumsGrid.insertAdjacentHTML('beforeend', html);
+    } else {
+        for (const album of albums) {
+            const html = `
         <article class="album-card">
         <div class="album-card-image">
             <img src="${album.image}" alt="${album.title}">
@@ -18,7 +24,8 @@ async function showAlbums(albums) {
         </div>
         </article>
         `;
-        albumsGrid.insertAdjacentHTML('beforeend', html);
+            albumsGrid.insertAdjacentHTML('beforeend', html);
+        }
     }
 }
 
