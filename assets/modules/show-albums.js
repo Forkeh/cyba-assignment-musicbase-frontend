@@ -14,7 +14,7 @@ async function showAlbums(albums) {
         </div>
         <div class="album-card-content">
             <h3>${album.title}</h3>
-            <p>${album.year}</p>
+            <p>${album.yearOfRelease}</p>
         </div>
         </article>
         `;
