@@ -13,7 +13,7 @@ async function showAlbums(albums) {
             <img src="${album.image}" alt="${album.title}">
         </div>
         <div class="album-card-content">
-            <h3>${album.title}</h3>
+            <h4>${album.title}</h4>
             <p>${album.yearOfRelease}</p>
         </div>
         </article>

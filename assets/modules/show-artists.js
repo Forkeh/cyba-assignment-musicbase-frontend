@@ -13,7 +13,7 @@ async function showArtists(artists) {
             <img src="${artist.image}" alt="${artist.name}">
         </div>
         <div class="artist-card-content">
-            <h3>${artist.name}</h3>
+            <h4>${artist.name}</h4>
         </div>
         </article>
         `;
