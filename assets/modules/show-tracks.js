@@ -8,7 +8,7 @@ async function showTracks (tracks) {
 
     if (tracks.length === 0 || !tracks) {
         console.log('ShowTracks: No tracks found')
-        const html = `
+        const html = /*html*/ `
         <tr>
             <td colspan="4">No tracks found</td>
         </tr>
@@ -18,7 +18,7 @@ async function showTracks (tracks) {
     }
 
     for (const track of tracks) {
-        const html = `
+        const html = /*html*/ `
         <tr>
             <td>${track.title}</td>
             <td>${convertSecondsToMinutesAndSeconds(track.duration)}</td>

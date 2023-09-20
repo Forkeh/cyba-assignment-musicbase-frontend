@@ -7,13 +7,13 @@ async function showArtists(artists) {
     artistsGrid.innerHTML = '';
 
     if (artists.length === 0 || !artists) {
-        const html = `
+        const html = /*html*/ `
         <p>No artists found</p>
         `;
         artistsGrid.insertAdjacentHTML('beforeend', html);
     } else {
         for (const artist of artists) {
-            const html = `
+            const html = /*html*/ `
         <article class="artist-card">
         <div class="artist-card-image">
             <img src="${artist.image}" alt="${artist.name}">
