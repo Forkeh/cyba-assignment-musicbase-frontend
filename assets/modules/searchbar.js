@@ -27,4 +27,4 @@ async function showAll() {
     await showTracks(tracksArr);
 }
 
-export { search };
+export { search, showAll };
