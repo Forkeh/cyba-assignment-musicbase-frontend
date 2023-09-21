@@ -91,6 +91,7 @@ h1 {
 
 h2 {
     font-size: var(--font-size-xl);
+    margin-left: var(--spacing-base);
 }
 
 h3 {
@@ -198,7 +199,7 @@ main .tracks-table {
     width: 100%;
     border-collapse: collapse;
     border-spacing: 0;
-    margin: 0 auto;
+    margin: 0 auto 0 var(--spacing-base);
 }
 
 main .tracks-table thead {

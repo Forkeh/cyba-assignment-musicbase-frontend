@@ -1,4 +1,4 @@
-const url = 'http://localhost:3000/';
+const url = 'https://cyba-music-base-node-app.azurewebsites.net/';
 async function getAll(path) {
     const response = await fetch(`${url}${path}`);
     return await response.json();
