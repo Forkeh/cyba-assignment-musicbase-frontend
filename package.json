@@ -1,0 +1,17 @@
+{
+  "name": "cyba-assignment-musicbase-frontend",
+  "version": "1.0.0",
+  "description": "Mandatory assignment - 2. semester - KEA",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "liveserver": "live-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "live-server": "^1.2.2"
+  }
+}
