@@ -156,7 +156,6 @@ main .artists-grid, main .albums-grid {
 
 main .artists-grid .artist-card, main .albums-grid .album-card {
     position: relative;
-    /*cursor: pointer;*/
     background: var(--color-tertiary);
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);

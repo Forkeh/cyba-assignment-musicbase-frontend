@@ -3,13 +3,9 @@
 import { getAll } from "./assets/modules/api.js";
 import { search, showAll } from "./assets/modules/searchbar.js";
 
-let { artistsArr, albumsArr, tracksArr } = {
-    artistsArr: [],
-    albumsArr: [],
-    tracksArr: [],
-};
+let artistsArr = [], albumsArr =[], tracksArr =[];
 
-document.addEventListener("DOMContentLoaded", async () => {
+window.addEventListener("load", async () => {
     console.log("DOM loaded");
     // Get all artists, albums and tracks
     artistsArr = await getAll("artists");
@@ -19,10 +15,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     await showAll()
     // add event listener for search
     const searchInput = document.querySelector("#searchbar");
-    if (!searchInput) {
-        console.error("Search HTML element is missing.");
-        return;
-    }
+
     searchInput.addEventListener("input", () => {
         const searchValue = searchInput.value;
         search(searchValue);
